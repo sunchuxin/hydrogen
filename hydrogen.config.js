@@ -1,16 +1,16 @@
-import {defineConfig, CookieSessionStorage} from '@shopify/hydrogen/config';
+import { defineConfig, CookieSessionStorage } from '@shopify/hydrogen/config';
 
 export default defineConfig({
   shopify: {
-    defaultCountryCode: 'US',
-    defaultLanguageCode: 'EN',
+    defaultCountryCode: 'CN',
+    defaultLanguageCode: 'ZH_CN',
     storeDomain:
       // @ts-ignore
-      Oxygen?.env?.PUBLIC_STORE_DOMAIN || 'hydrogen-preview.myshopify.com',
+      Oxygen?.env?.PUBLIC_STORE_DOMAIN || 'xn-yety41be6wrql.myshopify.com',
     storefrontToken:
       // @ts-ignore
       Oxygen?.env?.PUBLIC_STOREFRONT_API_TOKEN ||
-      '3b580e70970c4528da70c98e097c2fa0',
+      'b5e6d32f7c50970e5675f1b17c84e236',
     privateStorefrontToken:
       // @ts-ignore
       Oxygen?.env?.PRIVATE_STOREFRONT_API_TOKEN,
